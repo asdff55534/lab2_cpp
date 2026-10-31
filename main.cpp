@@ -126,8 +126,12 @@ void Task2() {
   const auto original_items = items;
   values.insert(values.end(), original_items.begin(),
                 original_items.begin() + original_items.size() / 2);
-  items.insert(items.begin(), original_values.rbegin(),
-               original_values.rbegin() + original_values.size() / 2);
+  auto middle_values =
+    original_values.begin() + original_values.size() / 2;
+
+  items.insert(items.begin(),
+               std::make_reverse_iterator(middle_values),
+               original_values.rend());
   cout << "Вектор V после вставки: ";
   PrintVector(values);
   cout << "Дек D после вставки: ";
@@ -290,7 +294,7 @@ void Task8() {
   }
   list<string> result;
   auto operation = [](const string& left, const string& right) {
-    return string(1, left.front()) + right.back();
+    return string(1, right.front()) + left.back();
   };
   std::adjacent_difference(words.begin(), words.end(), std::back_inserter(result), operation);
   if (!result.empty()) result.erase(result.begin());
