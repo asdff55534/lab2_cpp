@@ -85,7 +85,7 @@ void PrintDeque(const deque<int>& values) {
 }
 
 void Task1() {
-  cout << "\nЗадание 1.1. Чтение целых чисел из файла.\n";
+  cout << "\nЗадание 1.1.\n";
   string filename;
   cout << "Введите имя входного файла: ";
   cin >> filename;
@@ -106,7 +106,7 @@ void Task1() {
 }
 
 void Task2() {
-  cout << "\nЗадание 2.6. Вставка элементов в вектор и дек.\n";
+  cout << "\nЗадание 2.6.\n";
   vector<int> values;
   if (!ReadVector("вектора V", &values, 2, true)) return;
   int size = 0;
@@ -135,7 +135,7 @@ void Task2() {
 }
 
 void Task3() {
-  cout << "\nЗадание 3.8. Удаление элементов с нечетными номерами.\n";
+  cout << "\nЗадание 3.8.\n";
   vector<int> values;
   if (!ReadVector("вектора V", &values)) return;
   auto it = values.begin();
@@ -148,7 +148,7 @@ void Task3() {
 }
 
 void Task4() {
-  cout << "\nЗадание 4.2. Вывод чисел с нечетными порядковыми номерами из файла.\n";
+  cout << "\nЗадание 4.2.\n";
   string filename;
   cout << "Введите имя входного файла: ";
   cin >> filename;
@@ -172,20 +172,33 @@ void Task4() {
 }
 
 void Task5() {
-  cout << "\nЗадание 5.1. Удаление второго нулевого элемента.\n";
+  cout << "\nЗадание 5.9.\n";
   vector<int> values;
   if (!ReadVector("вектора V", &values)) return;
-  auto first_zero = std::find(values.begin(), values.end(), 0);
-  if (first_zero != values.end()) {
-    auto second_zero = std::find(first_zero + 1, values.end(), 0);
-    if (second_zero != values.end()) values.erase(second_zero);
+
+  int count = 0;
+  if (!ReadPositiveInt("Введите K (> 0): ", &count)) return;
+
+  auto sequence = std::search_n(
+      values.begin(), values.end(), count, 0,
+      [](int value, int) { return value > 0; });
+
+  if (sequence == values.end()) {
+    cout << "Требуемый набор положительных чисел не найден.\n";
+  } else {
+    auto insertion_position = sequence + count;
+    vector<int> duplicate(sequence, insertion_position);
+    values.insert(insertion_position, duplicate.begin(), duplicate.end());
+    cout << "Первый набор из " << count
+         << " положительных чисел продублирован.\n";
   }
+
   cout << "Результат: ";
   PrintVector(values);
 }
 
 void Task6() {
-  cout << "\nЗадание 6.9. Дублирование первой половины списка в обратном порядке.\n";
+  cout << "\nЗадание 6.9.\n";
   int size = 0;
   while (true) {
     if (!ReadInt("Введите четное количество элементов списка L1: ", &size)) return;
@@ -228,17 +241,31 @@ void Task6() {
 }
 
 void Task7() {
-  cout << "\nЗадание 7.2. Три наименьших элемента вектора.\n";
-  vector<int> values;
-  if (!ReadVector("вектора V", &values, 3)) return;
-  std::partial_sort(values.begin(), values.begin() + 3, values.end());
-  cout << "Три наименьших элемента по возрастанию: ";
-  std::copy(values.begin(), values.begin() + 3, ostream_iterator<int>(std::cout, " "));
+  cout << "\nЗадание 7.6.\n";
+  int size = 0;
+  if (!ReadPositiveInt("Введите количество элементов списка L: ", &size)) return;
+
+  list<int> values;
+  cout << "Введите " << size << " целых чисел для списка L:\n";
+  for (int i = 0; i < size; ++i) {
+    int value = 0;
+    if (!ReadInt("Элемент " + std::to_string(i + 1) + ": ", &value)) return;
+    values.push_back(value);
+  }
+
+  auto boundary = std::stable_partition(
+      values.begin(), values.end(), [](int value) { return value > 0; });
+
+  cout << "Список после перегруппировки: ";
+  for (auto it = values.begin(); it != values.end(); ++it) cout << *it << ' ';
   cout << '\n';
+  cout << "Положительных элементов: " << std::distance(values.begin(), boundary)
+       << "\nНеположительных элементов: "
+       << std::distance(boundary, values.end()) << '\n';
 }
 
 void Task8() {
-  cout << "\nЗадание 8.2. Формирование строк по соседним словам.\n";
+  cout << "\nЗадание 8.2.\n";
   int size = 0;
   if (!ReadPositiveInt("Введите количество английских слов (не менее 2): ", &size)) return;
   while (size < 2) {
@@ -273,7 +300,7 @@ void Task8() {
 }
 
 void Task9() {
-  cout << "\nЗадание 9.1. Подсчет векторов, содержащих все элементы V0.\n";
+  cout << "\nЗадание 9.1.\n";
   vector<int> base;
   if (!ReadVector("вектора V0", &base)) return;
   int count = 0;
@@ -295,7 +322,7 @@ void Task9() {
 }
 
 void Task10() {
-  cout << "\nЗадание 10.1. Подсчет повторений чисел.\n";
+  cout << "\nЗадание 10.1.\n";
   vector<int> values;
   if (!ReadVector("вектора V", &values)) return;
   map<int, int> counts;
@@ -308,10 +335,10 @@ void Task10() {
 
 int main() {
   cout << "Выберите задачу для запуска:\n"
-       << "1 — Задание 1.1\n2 — Задание 2.6\n3 — Задание 3.8\n"
-       << "4 — Задание 4.2\n5 — Задание 5.1\n6 — Задание 6.9\n"
-       << "7 — Задание 7.2\n8 — Задание 8.2\n9 — Задание 9.1\n"
-       << "10 — Задание 10.1\n0 — Выход\n";
+       << "1 — 1.1\n2 — 2.6\n3 — 3.8\n"
+       << "4 — 4.2\n5 — 5.9\n6 — 6.9\n"
+       << "7 — 7.6\n8 — 8.2\n9 — 9.1\n"
+       << "10 — 10.1\n0 — Выход\n";
   while (true) {
     int choice = 0;
     if (!ReadInt("Ваш выбор: ", &choice)) break;
