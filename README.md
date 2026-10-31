@@ -22,6 +22,7 @@
 <img width="468" height="85" alt="изображение" src="https://github.com/user-attachments/assets/d98cb209-ba8c-4d71-931e-1e73e3d2348a" />
 
 Несуществующий файл: 
+
 <img width="398" height="80" alt="изображение" src="https://github.com/user-attachments/assets/1d36be32-3f23-4227-bfab-17942b5b1d67" />
 
 
@@ -45,6 +46,7 @@
 <img width="462" height="412" alt="изображение" src="https://github.com/user-attachments/assets/f6e61a91-6ef5-476a-b8e0-d1ded8dc532f" />
 
 Нечётное количество элементов дека: 
+
 <img width="547" height="217" alt="изображение" src="https://github.com/user-attachments/assets/7a3d27ff-d8b7-49d6-9dac-16c90d15f4e3" />
 
 
@@ -67,6 +69,7 @@
 <img width="423" height="242" alt="изображение" src="https://github.com/user-attachments/assets/f7a222a2-f9da-492f-a301-441d87121bc9" />
 
 Нулевое или отрицательное количество элементов: 
+
 <img width="440" height="165" alt="изображение" src="https://github.com/user-attachments/assets/51172816-617f-4396-b49e-417814ad1854" />
 
 
@@ -89,6 +92,7 @@
 <img width="550" height="78" alt="изображение" src="https://github.com/user-attachments/assets/737403c9-5b62-4cc4-8782-7b869fe3a645" />
 
 Несуществующий файл:
+
 <img width="387" height="81" alt="изображение" src="https://github.com/user-attachments/assets/dbb2a3c2-82d3-4fed-8fb2-eb77f68dee19" />
 
 
@@ -112,6 +116,7 @@
 <img width="533" height="357" alt="изображение" src="https://github.com/user-attachments/assets/90fa7777-ebe6-4904-a0b8-c958e96ccb16" />
 
 Ноль или отрицательное K:
+
 <img width="423" height="273" alt="изображение" src="https://github.com/user-attachments/assets/2794b4e0-bf77-437f-8ee1-0d776529fe32" />
 
 
@@ -134,6 +139,7 @@
 <img width="502" height="411" alt="изображение" src="https://github.com/user-attachments/assets/d06fc7c0-7d18-4790-a805-1a8e17a0edce" />
 
 Нечётное количество элементов списка:
+
 <img width="552" height="107" alt="изображение" src="https://github.com/user-attachments/assets/7d9f53db-774a-44c7-8968-00c85653b7f9" />
 
 
@@ -156,6 +162,7 @@
 <img width="467" height="357" alt="изображение" src="https://github.com/user-attachments/assets/aeee9008-c73d-4f5d-b471-0360ef4d2154" />
 
 Пустой список:
+
 <img width="413" height="108" alt="изображение" src="https://github.com/user-attachments/assets/d89f29ba-90e9-4fbd-9ac6-23d95f91dcde" />
 
 
@@ -179,6 +186,7 @@
 <img width="521" height="217" alt="изображение" src="https://github.com/user-attachments/assets/9d8fa820-2efd-424d-a7ef-ff8afef59d67" />
 
 Одно слово вместо минимум двух:
+
 <img width="510" height="105" alt="изображение" src="https://github.com/user-attachments/assets/208a13e5-6d2a-4401-880b-e1a46a9d49c3" />
 
 
@@ -203,6 +211,7 @@
 <img width="432" height="658" alt="изображение" src="https://github.com/user-attachments/assets/3290c2d5-d10e-4d8f-af1a-ef951b4bcbd2" />
 
 Пустой исходный вектор:
+
 <img width="435" height="120" alt="изображение" src="https://github.com/user-attachments/assets/ed39dbb0-cb31-4a73-9022-309c2fdde3da" />
 
 
@@ -225,4 +234,5 @@
 <img width="492" height="416" alt="изображение" src="https://github.com/user-attachments/assets/f6f4a0bf-c58f-4358-b2f8-cf7f7073774d" />
 
 Некорректный ввод вместо числа:
+
 <img width="486" height="252" alt="изображение" src="https://github.com/user-attachments/assets/90e7aad6-7cab-474d-8653-4eabeafdd890" />
