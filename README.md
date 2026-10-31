@@ -18,6 +18,8 @@
 
 **Тестирование**
 
+<img width="302" height="122" alt="изображение" src="https://github.com/user-attachments/assets/4c1a7bbd-803b-4c93-85a5-68f2e36c8f08" />
+<img width="468" height="85" alt="изображение" src="https://github.com/user-attachments/assets/d98cb209-ba8c-4d71-931e-1e73e3d2348a" />
 
 ## Задача 2.6
 
@@ -36,6 +38,7 @@
 
 **Тестирование**
 
+<img width="462" height="412" alt="изображение" src="https://github.com/user-attachments/assets/f6e61a91-6ef5-476a-b8e0-d1ded8dc532f" />
 
 ## Задача 3.8
 
@@ -53,6 +56,8 @@
 
 **Тестирование**
 
+<img width="423" height="242" alt="изображение" src="https://github.com/user-attachments/assets/f7a222a2-f9da-492f-a301-441d87121bc9" />
+
 
 ## Задача 4.2
 
@@ -68,6 +73,9 @@
 4. Вывести оставшиеся числа с помощью `ostream_iterator`.
 
 **Тестирование**
+
+<img width="360" height="127" alt="изображение" src="https://github.com/user-attachments/assets/1e17a6dd-5935-45f8-a1a4-fe2c56ae78ac" />
+<img width="550" height="78" alt="изображение" src="https://github.com/user-attachments/assets/737403c9-5b62-4cc4-8782-7b869fe3a645" />
 
 
 ## Задача 5.9
@@ -87,6 +95,8 @@
 
 **Тестирование**
 
+<img width="533" height="357" alt="изображение" src="https://github.com/user-attachments/assets/90fa7777-ebe6-4904-a0b8-c958e96ccb16" />
+
 
 ## Задача 6.9
 
@@ -103,6 +113,8 @@
 5. Вывести изменённые списки.
 
 **Тестирование**
+
+<img width="502" height="411" alt="изображение" src="https://github.com/user-attachments/assets/d06fc7c0-7d18-4790-a805-1a8e17a0edce" />
 
 
 ## Задача 7.6
@@ -121,6 +133,8 @@
 
 **Тестирование**
 
+<img width="467" height="357" alt="изображение" src="https://github.com/user-attachments/assets/aeee9008-c73d-4f5d-b471-0360ef4d2154" />
+
 
 ## Задача 8.2
 
@@ -138,6 +152,8 @@
 6. Вывести полученный дек.
 
 **Тестирование**
+
+<img width="521" height="217" alt="изображение" src="https://github.com/user-attachments/assets/9d8fa820-2efd-424d-a7ef-ff8afef59d67" />
 
 
 ## Задача 9.1
@@ -158,6 +174,8 @@
 
 **Тестирование**
 
+<img width="432" height="658" alt="изображение" src="https://github.com/user-attachments/assets/3290c2d5-d10e-4d8f-af1a-ef951b4bcbd2" />
+
 
 ## Задача 10.1
 
@@ -175,4 +193,5 @@
 
 **Тестирование**
 
+<img width="492" height="416" alt="изображение" src="https://github.com/user-attachments/assets/f6f4a0bf-c58f-4358-b2f8-cf7f7073774d" />
 
